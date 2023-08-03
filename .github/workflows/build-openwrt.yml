@@ -37,7 +37,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     options:
-      dyas-to-keep:2
+      dyas-to-keep: 2
       
     steps:
     - name: Checkout
