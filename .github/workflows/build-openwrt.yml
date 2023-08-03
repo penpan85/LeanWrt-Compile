@@ -16,8 +16,8 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -36,8 +36,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    options:
-      dyas-to-keep: 2
       
     steps:
     - name: Checkout
